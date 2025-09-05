@@ -10,7 +10,7 @@ import java.util.List;
 public class JOB_SERVICE implements INTERFACE_JOB_SERVICE
 {
     private List<JOB> jobs= new ArrayList<>();
-    private Long nextid=1L;
+    private Long nextId =1L;
 
     //get all jobs
     @Override
@@ -23,7 +23,7 @@ public class JOB_SERVICE implements INTERFACE_JOB_SERVICE
     @Override
     public void createJob(JOB job)
     {
-        job.setId(nextid++);
+        job.setId(nextId++);
         jobs.add(job);
     }
 
